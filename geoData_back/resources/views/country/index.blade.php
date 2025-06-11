@@ -6,10 +6,9 @@
     <h1>Saraksts</h1>
     <div>
       @foreach($cuntry as $c)
-        <div>
-          <p>{{ $c->name }}</p>
-          <a href="/show/{{ $c->id }}">Detaļas</a>
-        </div>
+      <div>
+        <a href="/show/{{ $c->id }}">{{ $c->name }}</a>
+      </div>
       @endforeach
     </div>
     
